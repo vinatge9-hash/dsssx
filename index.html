@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bean Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6F4E37',
+            secondary: '#D8C6A8',
+            accent: '#D97706',
+            background: '#F7F3EC',
+            surface: '#FFFFFF',
+            text: '#1F1A16',
+            textSecondary: '#5A524F'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased" style="font-family: Inter, system-ui, Arial; background: #F7F3EC; color: #1F1A16;"> 
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-filter backdrop-blur-md shadow-md" role="banner">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="w-9 h-9 rounded-full bg-[#6F4E37] text-white flex items-center justify-center font-bold">B+</span>
+        <a href="index.html" class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif; color: #1F1A16; text-decoration: none;">Brew & Bean Café</a>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-sm hover:text-primary transition-colors">Home</a>
+        <a href="menu.html" class="text-sm hover:text-primary transition-colors">Menu</a>
+        <a href="gallery.html" class="text-sm hover:text-primary transition-colors">Gallery</a>
+        <a href="about.html" class="text-sm hover:text-primary transition-colors">About</a>
+        <a href="visit_/_locations.html" class="text-sm hover:text-primary transition-colors">Locations</a>
+        <a href="online_ordering.html" class="text-sm hover:text-primary transition-colors">Order</a>
+        <a href="contact.html" class="text-sm hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <a href="online_ordering.html" class="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-[#6F4E37] text-white hover:bg-[#5c3c2d] transition-colors" aria-label="Order Online">Order Online</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Prominent on Home) -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-[#D8C6A8] to #F7F3EC py-20 md:py-28" aria-label="Hero">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style="font-family: 'Playfair Display', Georgia, serif; color:#1F1A16;">A Modern Coffee House, Crafted for Connection</h1>
+          <p class="text-lg text-textSecondary mb-6 max-w-md" style="line-height:1.6;">Experience lightly sweetened, thoughtfully sourced coffee, fresh pastries, and a welcoming space designed for work, study, and conversations that linger.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="menu.html" class="px-6 py-3 rounded-md bg-[#6F4E37] text-white font-semibold hover:bg-[#5c3c2d] transition-all duration-300" aria-label="View Menu">View Menu</a>
+            <a href="online_ordering.html" class="px-6 py-3 rounded-md border border-[#6F4E37] text-[#6F4E37] hover:bg-[#6F4E3733] transition-all duration-300" aria-label="Order Online">Order Online</a>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <img src="https://images.unsplash.com/photo-1495475178145-57e7e9d7a2fd?q=80&w=1200&auto=format&fit=crop" alt="Latte art in a cup" class="rounded-xl shadow-xl w-full max-w-sm object-cover reveal js-animate" style="aspect-ratio: 1 / 1; width: 100%; height: auto;"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick intro panels -->
+    <section class="py-14" aria-label="Highlights">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="reveal p-6 rounded-xl bg-white shadow-card hover:shadow-lg transition-all duration-300" aria-label="Freshly brewed coffee">
+            <div class="flex items-center gap-3 mb-2"><span class="w-8 h-8 rounded-full bg-[#D97706] text-white flex items-center justify-center">☕</span></div>
+            <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif; color:#1F1A16;">Freshly Brewed Coffee</h3>
+            <p class="text-sm text-textSecondary">Small-batch roasts, ground to order.</p>
+          </article>
+          <article class="reveal p-6 rounded-xl bg-white shadow-card hover:shadow-lg transition-all duration-300" aria-label="Artisan pastries">
+            <div class="flex items-center gap-3 mb-2"><span class="w-8 h-8 rounded-full bg-[#6F4E37] text-white flex items-center justify-center">🥐</span></div>
+            <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif; color:#1F1A16;">Artisan Pastries</h3>
+            <p class="text-sm text-textSecondary">Buttery croissants and seasonal treats.</p>
+          </article>
+          <article class="reveal p-6 rounded-xl bg-white shadow-card hover:shadow-lg transition-all duration-300" aria-label="Sustainable sourcing">
+            <div class="flex items-center gap-3 mb-2"><span class="w-8 h-8 rounded-full bg-[#D8C6A8] text-white flex items-center justify-center">🌱</span></div>
+            <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif; color:#1F1A16;">Sustainable Sourcing</h3>
+            <p class="text-sm text-textSecondary">Direct relationships with farmers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Items (Drinks & Pastries) -->
+    <section class="py-12" aria-label="Featured">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" style="font-family: 'Playfair Display', serif; color:#1F1A16;">Featured Drinks & Pastries</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Caramel latte">
+            <img src="https://images.unsplash.com/photo-1509042239860-f150448a9d24?q=80&w=600&auto=format&fit=crop" alt="Caramel latte" class="rounded-md w-full h-40 object-cover" />
+            <div class="mt-2 flex items-start justify-between">
+              <div>
+                <h4 class="font-semibold" style="font-family: 'Playfair Display', serif;">Caramel Latte</h4>
+                <p class="text-sm text-textSecondary">Creamy caramel, espresso, milk</p>
+              </div>
+              <span class="text-sm font-semibold" aria-label="Price">$4.75</span>
+            </div>
+          </article>
+          <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Blueberry muffin">
+            <img src="https://images.unsplash.com/photo-1588731237797-6e4f2f6aeb8d?q=80&w=600&auto=format&fit=crop" alt="Blueberry muffin" class="rounded-md w-full h-40 object-cover" />
+            <div class="mt-2 flex items-start justify-between">
+              <div>
+                <h4 class="font-semibold" style="font-family: 'Playfair Display', serif;">Blueberry Muffin</h4>
+                <p class="text-sm text-textSecondary">Burst of berries, tender crumb</p>
+              </div>
+              <span class="text-sm font-semibold" aria-label="Price">$3.95</span>
+            </div>
+          </article>
+          <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Cinnamon croissant">
+            <img src="https://images.unsplash.com/photo-1600585154524-6f0a8a5f7f58?q=80&w=600&auto=format&fit=crop" alt="Cinnamon croissant" class="rounded-md w-full h-40 object-cover" />
+            <div class="mt-2 flex items-start justify-between">
+              <div>
+                <h4 class="font-semibold" style="font-family: 'Playfair Display', serif;">Cinnamon Croissant</h4>
+                <p class="text-sm text-textSecondary">Flaky, sweet, and warm</p>
+              </div>
+              <span class="text-sm font-semibold" aria-label="Price">$3.75</span>
+            </div>
+          </article>
+          <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Chai latte">
+            <img src="https://images.unsplash.com/photo-1515165562835-0e26c9e4b5c8?q=80&w=600&auto=format&fit=crop" alt="Chai latte" class="rounded-md w-full h-40 object-cover" />
+            <div class="mt-2 flex items-start justify-between">
+              <div>
+                <h4 class="font-semibold" style="font-family: 'Playfair Display', serif;">Chai Latte</h4>
+                <p class="text-sm text-textSecondary">Spiced and comforting</p>
+              </div>
+              <span class="text-sm font-semibold" aria-label="Price">$4.25</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white" aria-label="Testimonials">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6" style="font-family: 'Playfair Display', serif; color:#1F1A16;">What our guests say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <blockquote class="reveal p-6 rounded-xl shadow-card bg-[#fff] border border-[#e5e7eb]" cite="https://example.com/testimonial-1">
+            <p class="mb-2 text-body" style="font-family: Inter, sans-serif;">"The coffee here feels crafted with care. The space is bright and inviting, perfect for weekend study sessions."</p>
+            <footer class="flex items-center gap-3 mt-2">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=128&h=128&fit=crop" alt="Customer avatar" class="w-8 h-8 rounded-full" />
+              <span class="text-sm">Alex R.</span>
+            </footer>
+          </blockquote>
+          <blockquote class="reveal p-6 rounded-xl shadow-card bg-[#fff] border border-[#e5e7eb]" cite="https://example.com/testimonial-2">
+            <p class="mb-2" style="font-family: Inter, sans-serif;">"Delicious pastries and the best matcha latte in town. Friendly staff and cozy vibe."</p>
+            <footer class="flex items-center gap-3 mt-2">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9f38e49f57?q=80&w=128&h=128&fit=crop" alt="Customer avatar" class="w-8 h-8 rounded-full" />
+              <span class="text-sm">Jordan M.</span>
+            </footer>
+          </blockquote>
+          <blockquote class="reveal p-6 rounded-xl shadow-card bg-[#fff] border border-[#e5e7eb]" cite="https://example.com/testimonial-3">
+            <p class="mb-2" style="font-family: Inter, sans-serif;">"A gem of a café. Comfortable seating, great wifi, and excellent seasonal specials."</p>
+            <footer class="flex items-center gap-3 mt-2">
+              <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=128&h=128&fit=crop" alt="Customer avatar" class="w-8 h-8 rounded-full" />
+              <span class="text-sm">Priya K.</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup (Component) -->
+    <section class="py-12 bg-[#FFFFFF]" aria-label="Newsletter">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 bg-[#f8f1e8] p-6 rounded-xl shadow-card">
+        <div>
+          <h3 class="text-xl font-semibold" style="font-family: 'Playfair Display', serif; color:#1F1A16;">Join our newsletter</h3>
+          <p class="text-sm text-textSecondary">Get promotions, events, and the latest menu updates.</p>
+        </div>
+        <form class="flex gap-2 w-full md:w-auto" action="#" method="get" aria-label="Newsletter signup">
+          <input type="email" placeholder="Your email" class="flex-1 px-4 py-3 rounded-md border border-[#ddd] focus:outline-none focus:ring-2 focus:ring-[#D97706]" required />
+          <button type="submit" class="px-4 py-3 rounded-md bg-[#6F4E37] text-white hover:bg-[#5c3c2d] transition-all duration-300">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white py-8" role="contentinfo">
+    <div class="container mx-auto px-4 text-sm text-textSecondary flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2025 Brew & Bean Café. All rights reserved.</p>
+      <div class="flex items-center gap-3" aria-label="Social links">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+        <a href="#" class="hover:underline">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
