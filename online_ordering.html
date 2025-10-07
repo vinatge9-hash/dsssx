@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Ordering - Brew & Bean Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased" style="font-family: Inter, sans-serif; background:#F7F3EC; color:#1F1A16;">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md" role="banner">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="w-9 h-9 rounded-full bg-[#6F4E37] text-white flex items-center justify-center font-bold">B+</span>
+        <a href="index.html" class="text-2xl font-semibold" style="font-family: Playfair Display, serif; text-decoration:none; color:#1F1A16;">Brew & Bean Café</a>
+      </div>
+      <nav class="hidden md:flex space-x-6" aria-label="Main navigation">
+        <a href="index.html" class="text-sm hover:text-primary">Home</a>
+        <a href="menu.html" class="text-sm hover:text-primary">Menu</a>
+        <a href="gallery.html" class="text-sm hover:text-primary">Gallery</a>
+        <a href="about.html" class="text-sm hover:text-primary">About</a>
+        <a href="visit_/_locations.html" class="text-sm hover:text-primary">Locations</a>
+        <a href="online_ordering.html" class="text-sm hover:text-primary">Order</a>
+        <a href="contact.html" class="text-sm hover:text-primary">Contact</a>
+      </nav>
+      <a href="online_ordering.html" class="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-[#6F4E37] text-white">Order Online</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div class="reveal">
+          <h1 class="text-3xl md:text-4xl font-semibold" style="font-family: Playfair Display, serif; color:#1F1A16;">Online Ordering</h1>
+          <p class="text-sm text-textSecondary mt-2">Secure, quick checkout for pickup or delivery.</p>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 bg-white rounded-xl shadow-card">
+              <h4 class="font-semibold">Pickup</h4>
+              <p class="text-sm text-textSecondary">Order ahead for a quick pickup in-store.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow-card">
+              <h4 class="font-semibold">Delivery</h4>
+              <p class="text-sm text-textSecondary">Delivery within local area on selected items.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="p-4 bg-white rounded-xl shadow-card">
+            <h3 class="font-semibold mb-2" style="font-family: Playfair Display, serif;">Cart</h3>
+            <div class="grid grid-cols-1 gap-3" id="cart-items">
+              <div class="flex items-center justify-between">
+                <span class="text-sm">Caramel Latte</span>
+                <span class="text-sm">$4.25</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm">Blueberry Muffin</span>
+                <span class="text-sm">$3.95</span>
+              </div>
+            </div>
+            <div class="border-t mt-3 pt-3 flex items-center justify-between">
+              <span class="font-semibold">Total</span>
+              <span class="font-semibold">$8.20</span>
+            </div>
+            <button class="mt-3 w-full px-4 py-2 rounded-md bg-[#6F4E37] text-white">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-6" role="contentinfo">
+    <div class="container mx-auto px-4 text-sm text-textSecondary flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© Brew & Bean Café</p>
+      <div class="flex items-center gap-3">Social links</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
