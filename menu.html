@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Brew & Bean Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased" style="font-family: Inter, sans-serif; background:#F7F3EC; color:#1F1A16;">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md" role="banner">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="w-9 h-9 rounded-full bg-[#6F4E37] text-white flex items-center justify-center font-bold">B+</span>
+        <a href="index.html" class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif; text-decoration:none; color:#1F1A16;">Brew & Bean Café</a>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-sm hover:text-primary">Home</a>
+        <a href="menu.html" class="text-sm hover:text-primary">Menu</a>
+        <a href="gallery.html" class="text-sm hover:text-primary">Gallery</a>
+        <a href="about.html" class="text-sm hover:text-primary">About</a>
+        <a href="visit_/_locations.html" class="text-sm hover:text-primary">Locations</a>
+        <a href="online_ordering.html" class="text-sm hover:text-primary">Order</a>
+        <a href="contact.html" class="text-sm hover:text-primary">Contact</a>
+      </nav>
+      <a href="online_ordering.html" class="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-[#6F4E37] text-white">Order Online</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-semibold" style="font-family: Playfair Display, serif; color:#1F1A16;">Menu</h1>
+        <p class="text-sm text-textSecondary mb-4">Search, filter, and browse our categories. Prices shown in USD.</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-4">
+          <!-- Filters -->
+          <aside class="md:col-span-1 space-y-4 reveal">
+            <div class="p-4 bg-white rounded-xl shadow-card">
+              <h3 class="text-lg font-semibold" style="font-family: Playfair Display, serif;">Search</h3>
+              <input type="text" placeholder="Find a drink or pastry" class="mt-2 w-full px-3 py-2 rounded border" />
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow-card">
+              <h3 class="text-lg font-semibold" style="font-family: Playfair Display, serif;">Categories</h3>
+              <div class="flex flex-wrap gap-2 mt-2">
+                <span class="px-3 py-1 rounded-full border">Coffee</span>
+                <span class="px-3 py-1 rounded-full border">Tea</span>
+                <span class="px-3 py-1 rounded-full border">Pastries</span>
+                <span class="px-3 py-1 rounded-full border">Breakfast</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow-card">
+              <h3 class="text-lg font-semibold" style="font-family: Playfair Display, serif;">Price</h3>
+              <div class="mt-2 flex items-center gap-2">
+                <span class="px-2 py-1 rounded border text-sm">$</span>
+                <span class="px-2 py-1 rounded border text-sm">Up to $10</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Menu Cards -->
+          <section class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" aria-label="Menu items">
+            <!-- Card 1 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Latte">
+              <img src="https://images.unsplash.com/photo-1495461040817-6c9b4d3b2e9d?q=80&w=600&auto=format&fit=crop" alt="Latte" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Latte</h4>
+                  <p class="text-sm text-textSecondary">Espresso, steamed milk</p>
+                </div>
+                <span class="text-sm font-semibold">$4.25</span>
+              </div>
+            </article>
+            <!-- Card 2 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Cappuccino">
+              <img src="https://images.unsplash.com/photo-1526312426766-144059b4c4a8?q=80&w=600&auto=format&fit=crop" alt="Cappuccino" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Cappuccino</h4>
+                  <p class="text-sm text-textSecondary">Foamy bliss</p>
+                </div>
+                <span class="text-sm font-semibold">$4.50</span>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Matcha Latte">
+              <img src="https://images.unsplash.com/photo-1553621042-f6e14724463d?q=80&w=600&auto=format&fit=crop" alt="Matcha latte" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Matcha Latte</h4>
+                  <p class="text-sm text-textSecondary">Ceremonial grade</p>
+                </div>
+                <span class="text-sm font-semibold">$4.75</span>
+              </div>
+            </article>
+            <!-- Card 4 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Croissant">
+              <img src="https://images.unsplash.com/photo-1604908176990-2a2f3b0f3a55?q=80&w=600&auto=format&fit=crop" alt="Croissant" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Butter Croissant</h4>
+                  <p class="text-sm text-textSecondary">Flaky, buttery</p>
+                </div>
+                <span class="text-sm font-semibold">$3.50</span>
+              </div>
+            </article>
+            <!-- Card 5 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Blueberry muffin">
+              <img src="https://images.unsplash.com/photo-1604908176666-8a7afd7f5f12?q=80&w=600&auto=format&fit=crop" alt="Blueberry muffin" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Blueberry Muffin</h4>
+                  <p class="text-sm text-textSecondary">Seasonal berries</p>
+                </div>
+                <span class="text-sm font-semibold">$3.95</span>
+              </div>
+            </article>
+            <!-- Card 6 -->
+            <article class="reveal p-4 bg-white rounded-xl shadow-card hover:shadow-lg transition-all duration-300" aria-label="Avocado toast">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600&auto=format&fit=crop" alt="Avocado toast" class="w-full h-28 object-cover rounded" />
+              <div class="mt-2 flex items-center justify-between">
+                <div>
+                  <h4 class="font-semibold" style="font-family: Playfair Display, serif;">Avocado Toast</h4>
+                  <p class="text-sm text-textSecondary">Sourdough, market slices</p>
+                </div>
+                <span class="text-sm font-semibold">$6.25</span>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-6" role="contentinfo">
+    <div class="container mx-auto px-4 text-sm text-textSecondary flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© Brew & Bean Café</p>
+      <div class="flex items-center gap-3">
+        <span>Instagram</span>
+        <span>Facebook</span>
+        <span>Twitter</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
